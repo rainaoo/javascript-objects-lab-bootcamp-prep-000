@@ -9,7 +9,7 @@ describe('Objects', function() {
     it('returns an object with the orignal key value pairs and the new key value pair', function() {
       var recipes = { prop: 1 }
 
-      expect(updateObjectWithKeyAndValue(obj, 'prop2', 2)).toMatch({
+      expect(updateObjectWithKeyAndValue(recipes, 'prop2', 2)).toMatch({
         prop: 1,
         prop2: 2
       })
